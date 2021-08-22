@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),url(https://image.shutterstock.com/shutterstock/photos/1643947495/display_1500/stock-photo-coronavirus-covid-under-the-microscope-d-illustration-1643947495.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+header #title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 10px;
+}
+header #description{
+    margin-bottom: 40px;
+}
+
+form{
+    position: relative;
+    left: 50%;
+    margin-bottom: 5%;
+    transform: translate(-50%);
+    width: 600px;
+    background: rgba(12, 58, 99, 0.8);
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    
+}
+@media (max-width: 650px) {
+    form{
+        width: 500px;
+    }
+}
+.form-group{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.label-title, label{
+    color: white;
+    margin-bottom: 10px;
+}
+.label-title{
+    font-size: 20px;
+}
+label{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.form-control, #place-select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 8px;
+}
+.form-control:focus, #place-select:focus{
+    border-color: blue;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+}
+
+.label-content{
+    position: relative;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    left: 50px;
+  }
+input[type=checkbox]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;  
+    transition: 0.15s ease-in-out;
+}
+.check-box{
+    margin-left: 15px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    transition: 0.15s ease-in-out;
+}
+.label-content input[type=checkbox]:checked{
+    background-color: blue;
+}
+.submit-button{
+    align-items: center;
+}
+button{
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+button:hover{
+    border-color: blue;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+}
