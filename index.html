@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+</head>
+<body>
+    <header>
+        <h1 id="title">Covid - Health and Epidemiological Information</h1>
+        <p id="description"><i>freeCodeCamp Challenge - Build a Survey Page</i></p>
+    </header>
+    <form  id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name" class="label">Họ và tên</label>
+            <input id="name" class="form-control"  type="text" placeholder="Tên của bạn" required> 
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email" class="label">Email</label>
+            <input id="email" class="form-control"  type="email" placeholder="Email của bạn" required> 
+        </div>
+        <div class="form-group">
+            <label id="mssv-label" for="mssv" class="label">MSSV</label>
+            <input id="mssv" class="form-control"  type="text" placeholder="MSSV của bạn" required > 
+        </div>
+        <div class="form-group">
+            <label id="dropdown" for="place-select" class="label">Nơi lưu trú hiện tại</label>
+            <select  id="place-select" >
+                <option disabled selected >Chọn</option>
+                <option value="city">HCM</option>
+                <option value="provice">Tỉnh</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="address-label" for="address" class="label">Nơi ở hiện tại</label>
+            <input id="address" class="form-control"  type="text" placeholder="Câu trả lời của bạn" required> 
+        </div>
+        <div class="form-group">
+            <p class="label-title">Tình trạng sức khỏe hiện tại của bạn như thế nào ?</p>
+            <label for="healthbox1" class="label-content">
+                <input id="healthbox1" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Không có bệnh nền - sức khỏe tốt</span>
+            </label>
+            <label for="healthbox2" class="label-content">
+                <input id="healthbox2" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Có bệnh nền</span>
+            </label>
+            <label for="healthbox3" class="label-content">
+                <input id="healthbox3" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Có triệu chứng như: Sốt/ho/Viêm họng/Tiêu chảy</span>
+            </label>
+            <label for="healthbox4" class="label-content">
+                <input id="healthbox4" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Mất khứu giác/vị giác</span>
+            </label>
+            <label for="healthbox5" class="label-content">
+                <input id="healthbox5" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Đau ngực, nặng ngực, hụt hơi khi nói chuyện</span>
+            </label>
+            <label for="healthbox6" class="label-content">
+                <input id="healthbox6" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Khó thở</span>
+            </label>
+            <label for="healthbox7" class="label-content">
+                <input id="healthbox7" type="checkbox" name="health-check"  class="check-box">
+                <span class="checkmark">Mục khác</span>
+            </label>
+        </div>
+        <div class="form-group">
+            <p class="label-title">Bạn có thuộc các trường hợp sau không?<span class="label">(Tính từ ngày 10/05/2021 đến nay)</span></p>
+            <label for="casebox1" class="label-content">
+                <input id="casebox1" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">1 - Đã/Hiện tại đang là F0 - Cách ly/Điều trị tập trung</span>
+            </label>
+            <label for="casebox2" class="label-content">
+                <input id="casebox2" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">2 - Đã/Hiện tại đang là F0 - Cách ly/Điều trị tại nhà</span>
+            </label>
+            <label for="casebox3" class="label-content">
+                <input id="casebox3" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">3 - Đã/Hiện tại đang là F1 - Cách ly tập trung</span>
+            </label>
+            <label for="casebox4" class="label-content">
+                <input id="casebox4" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">4 - Đã/Hiện tại đang là F1 - Cách ly tại nhà</span>
+            </label>
+            <label for="casebox5" class="label-content">
+                <input id="casebox5" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">5 - Đã/Hiện tại đang ở khu vực có nguy cơ cao</span>
+            </label>
+            <label for="casebox6" class="label-content">
+                <input id="casebox6" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">6 - Đã/Hiện tại đang ở khu vực phong tỏa</span>
+            </label>
+            <label for="casebox7" class="label-content">
+                <input id="casebox7" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">7 - Hiện tại không liên quan đến ca mắc Covid</span>
+            </label>
+            <label for="casebox8" class="label-content">
+                <input id="casebox8" type="checkbox" name="case-check"  class="check-box">
+                <span class="checkmark">8 - Hiện tại đang gặp khó khăn khi giãn cách xã hội</span>
+            </label>     
+        </div>
+        <div class="form-group">
+            <label id="startdate-label" for="startdate" class="label">Ngày bắt đầu cách ly/điều trị (nếu có)</label>
+            <input id="startdate" class="form-control"  type="text" placeholder="Câu trả lời của bạn" > 
+        </div>
+        <div class="form-group">
+            <label id="enddate-label" for="enddate" class="label">Ngày kết thúc cách ly/điều trị (nếu có)</label>
+            <input id="enddate" class="form-control"  type="text" placeholder="Câu trả lời của bạn" > 
+        </div>
+        <div class="form-group">
+            <label id="treatment-place-label" for="treatemntplace" class="label">Nơi cách ly/điều trị (nếu có)</label>
+            <input id="treatemntplace" class="form-control"  type="text" placeholder="Câu trả lời của bạn" > 
+        </div>
+        <div class="form-group submit-button" >
+            <button id="submit">Submit</button>
+        </div>
+    </form>   
+</body>
+    <script src="./helper.js"></script>
+    <script src="./script.js"></script>
+</html>
